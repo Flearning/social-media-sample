@@ -6,7 +6,7 @@ class PostsController < ApplicationController
     @posts = Post.all.order('created_at desc')
     @posts_count = current_user.posts.length
   end
-  
+
   def new
   end
   
